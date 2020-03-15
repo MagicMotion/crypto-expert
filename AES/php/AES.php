@@ -20,3 +20,6 @@ class AES
      * openssl_encrypt 加密参数 options
      * 0: 返回值将会使用 base64
      * OPENSSL_RAW_DATA: 返回值使用原始字节
+     */
+
+    /**
