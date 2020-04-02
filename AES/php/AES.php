@@ -23,3 +23,6 @@ class AES
      */
 
     /**
+     * @param $data
+     * @return string
+     */
