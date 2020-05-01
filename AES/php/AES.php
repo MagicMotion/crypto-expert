@@ -28,3 +28,5 @@ class AES
      */
     public static function encrypt($data)
     {
+        return openssl_encrypt($data, 'AES-128-ECB', self::KEY);
+    }
