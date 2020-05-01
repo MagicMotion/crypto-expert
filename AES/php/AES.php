@@ -26,3 +26,5 @@ class AES
      * @param $data
      * @return string
      */
+    public static function encrypt($data)
+    {
