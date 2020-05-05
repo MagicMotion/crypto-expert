@@ -34,3 +34,4 @@ class AES
 
     /**
      * openssl_decrypt 加密参数 options
+     * 0: 默认数据是 base64 形式
