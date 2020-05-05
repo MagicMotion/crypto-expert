@@ -30,3 +30,7 @@ class AES
     {
         return openssl_encrypt($data, 'AES-128-ECB', self::KEY);
     }
+
+
+    /**
+     * openssl_decrypt 加密参数 options
