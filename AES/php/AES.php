@@ -38,3 +38,4 @@ class AES
      * 1: 默认数据是原始格式
      */
     public static function decrypt($data)
+    {
