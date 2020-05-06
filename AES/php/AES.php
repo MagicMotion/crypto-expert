@@ -39,3 +39,6 @@ class AES
      */
     public static function decrypt($data)
     {
+        return openssl_decrypt($data, 'AES-128-ECB', self::KEY);
+    }
+}
