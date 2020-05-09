@@ -11,3 +11,7 @@ public class DES {
     public static String encrypt(String data, String password) throws NoSuchAlgorithmException, InvalidKeyException, InvalidKeySpecException {
         if (data == null) {
             throw new NullPointerException("Parameter data cannot be null");
+        }
+        if (password == null) {
+            throw new NullPointerException("Parameter password cannot be null");
+        }
