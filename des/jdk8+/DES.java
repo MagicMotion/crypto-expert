@@ -9,3 +9,5 @@ public class DES {
      * @return 加密后内容
      */
     public static String encrypt(String data, String password) throws NoSuchAlgorithmException, InvalidKeyException, InvalidKeySpecException {
+        if (data == null) {
+            throw new NullPointerException("Parameter data cannot be null");
