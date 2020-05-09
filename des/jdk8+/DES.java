@@ -6,3 +6,6 @@ public class DES {
      *
      * @param password 加密密码，长度不能够小于8位
      * @param data     待加密字符串
+     * @return 加密后内容
+     */
+    public static String encrypt(String data, String password) throws NoSuchAlgorithmException, InvalidKeyException, InvalidKeySpecException {
