@@ -15,3 +15,5 @@ public class DES {
         if (password == null) {
             throw new NullPointerException("Parameter password cannot be null");
         }
+        SecretKey key = SecretKeyFactory.getInstance("DES").generateSecret(new DESKeySpec(password.getBytes(StandardCharsets.UTF_8)));
+        try {
