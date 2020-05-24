@@ -22,3 +22,5 @@ public class DES {
             byte[] bytes = cipher.doFinal(data.getBytes(StandardCharsets.UTF_8));
             return new String(Base64.getEncoder().encode(bytes));
         } catch (Exception e) {
+            e.printStackTrace();
+            return data;
