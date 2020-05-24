@@ -20,3 +20,5 @@ public class DES {
             Cipher cipher = Cipher.getInstance("DES/ECB/PKCS5Padding");
             cipher.init(Cipher.ENCRYPT_MODE, key);
             byte[] bytes = cipher.doFinal(data.getBytes(StandardCharsets.UTF_8));
+            return new String(Base64.getEncoder().encode(bytes));
+        } catch (Exception e) {
