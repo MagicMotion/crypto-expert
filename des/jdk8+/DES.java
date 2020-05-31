@@ -24,3 +24,5 @@ public class DES {
         } catch (Exception e) {
             e.printStackTrace();
             return data;
+        }
+    }
