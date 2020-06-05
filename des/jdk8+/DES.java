@@ -26,3 +26,6 @@ public class DES {
             return data;
         }
     }
+
+    /**
+     * DES 解密字符串
