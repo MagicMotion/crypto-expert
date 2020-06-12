@@ -32,3 +32,5 @@ public class DES {
      *
      * @param password 解密密码，长度不能够小于8位
      * @param data     待解密字符串
+     * @return 解密后内容
+     */
