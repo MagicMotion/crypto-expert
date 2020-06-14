@@ -34,3 +34,4 @@ public class DES {
      * @param data     待解密字符串
      * @return 解密后内容
      */
+    public static String decrypt(String data, String password) {
