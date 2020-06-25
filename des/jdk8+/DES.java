@@ -35,3 +35,7 @@ public class DES {
      * @return 解密后内容
      */
     public static String decrypt(String data, String password) {
+        if (data == null) {
+            throw new NullPointerException("Parameter data cannot be null");
+        }
+        if (password == null) {
