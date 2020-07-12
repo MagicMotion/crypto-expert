@@ -39,3 +39,5 @@ public class DES {
             throw new NullPointerException("Parameter data cannot be null");
         }
         if (password == null) {
+            throw new NullPointerException("Parameter password cannot be null");
+        }
