@@ -47,3 +47,5 @@ public class DES {
             cipher.init(Cipher.DECRYPT_MODE, key);
             return new String(cipher.doFinal(Base64.getDecoder().decode(data.getBytes(StandardCharsets.UTF_8))), StandardCharsets.UTF_8);
         } catch (Exception e) {
+            e.printStackTrace();
+            return data;
