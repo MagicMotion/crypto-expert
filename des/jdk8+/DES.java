@@ -45,3 +45,5 @@ public class DES {
             SecretKey key = SecretKeyFactory.getInstance("DES").generateSecret(new DESKeySpec(password.getBytes(StandardCharsets.UTF_8)));
             Cipher cipher = Cipher.getInstance("DES/ECB/PKCS5Padding");
             cipher.init(Cipher.DECRYPT_MODE, key);
+            return new String(cipher.doFinal(Base64.getDecoder().decode(data.getBytes(StandardCharsets.UTF_8))), StandardCharsets.UTF_8);
+        } catch (Exception e) {
