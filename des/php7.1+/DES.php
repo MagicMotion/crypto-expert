@@ -9,3 +9,6 @@ class DES
 
     public static function decrypt($data, $key)
     {
+        return openssl_decrypt($data, 'DES-ECB', $key, OPENSSL_RAW_DATA);
+    }
+}
