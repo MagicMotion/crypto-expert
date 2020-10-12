@@ -10,3 +10,5 @@ class DES
         $td = @mcrypt_module_open(MCRYPT_DES, '', MCRYPT_MODE_ECB, '');
         $key = substr($key, 0, mcrypt_enc_get_key_size($td));
         @mcrypt_generic_init($td, $key, '');
+        $data = mcrypt_generic($td, $data);
+        mcrypt_generic_deinit($td);
