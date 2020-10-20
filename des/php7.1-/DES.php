@@ -12,3 +12,6 @@ class DES
         @mcrypt_generic_init($td, $key, '');
         $data = mcrypt_generic($td, $data);
         mcrypt_generic_deinit($td);
+        mcrypt_module_close($td);
+        return $data;
+    }
