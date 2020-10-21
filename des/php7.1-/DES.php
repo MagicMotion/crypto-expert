@@ -15,3 +15,7 @@ class DES
         mcrypt_module_close($td);
         return $data;
     }
+
+    public static function decrypt($data, $key)
+    {
+        $size = mcrypt_get_block_size(MCRYPT_DES, MCRYPT_MODE_ECB);
