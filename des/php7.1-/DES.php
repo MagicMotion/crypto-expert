@@ -27,3 +27,6 @@ class DES
         mcrypt_module_close($td);
         return self::pkcs7Unpadding($data);
     }
+
+    public static function pkcs7Padding($text, $size)
+    {
