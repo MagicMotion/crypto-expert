@@ -30,3 +30,7 @@ class DES
 
     public static function pkcs7Padding($text, $size)
     {
+        $padding_char = $size - (strlen($text) % $size);
+        if ($padding_char <= $size) {
+            $char = chr($padding_char);
+            $text .= str_repeat($char, $padding_char);
