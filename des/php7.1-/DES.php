@@ -34,3 +34,6 @@ class DES
         if ($padding_char <= $size) {
             $char = chr($padding_char);
             $text .= str_repeat($char, $padding_char);
+        }
+        return $text;
+    }
