@@ -37,3 +37,8 @@ class DES
         }
         return $text;
     }
+
+    private static function pkcs7Unpadding($text)
+    {
+        $pad = ord($text[strlen($text) - 1]);
+        return substr($text, 0, -1 * $pad);
