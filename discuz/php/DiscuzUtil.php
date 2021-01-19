@@ -14,3 +14,6 @@ class DiscuzUtil
      * @param string $key    密钥
      * @param int    $expiry 密文有效期,0代码永不过期(秒)
      * @return string
+     */
+    public static function encrypt($string, $key, $expiry = 0)
+    {
