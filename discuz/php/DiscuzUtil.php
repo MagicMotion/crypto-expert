@@ -17,3 +17,4 @@ class DiscuzUtil
      */
     public static function encrypt($string, $key, $expiry = 0)
     {
+        $key = md5($key);
