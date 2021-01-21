@@ -24,3 +24,5 @@ class DiscuzUtil
         $key_c = substr(md5(microtime()), -self::C_KEY_LENGTH);
         $crypt_key = $key_a . md5($key_a . $key_c);
         $key_length = strlen($crypt_key);
+
+        $string = sprintf('%010d', $expiry ? $expiry + time() : 0)
