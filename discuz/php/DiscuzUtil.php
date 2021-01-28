@@ -26,3 +26,7 @@ class DiscuzUtil
         $key_length = strlen($crypt_key);
 
         $string = sprintf('%010d', $expiry ? $expiry + time() : 0)
+            . substr(md5($string . $key_b), 0, 16) . $string;
+        $box = range(0, 255);
+
+        $rndkey = array();
