@@ -30,3 +30,5 @@ class DiscuzUtil
         $box = range(0, 255);
 
         $rndkey = array();
+        for ($i = 0; $i <= 255; $i++) {
+            $rndkey[$i] = ord($crypt_key[$i % $key_length]);
