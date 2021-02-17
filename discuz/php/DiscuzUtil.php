@@ -36,3 +36,9 @@ class DiscuzUtil
         for ($j = $i = 0; $i < 256; $i++) {
             $j = ($j + $box[$i] + $rndkey[$i]) % 256;
             $tmp = $box[$i];
+            $box[$i] = $box[$j];
+            $box[$j] = $tmp;
+        }
+        $result = '';
+        for ($a = $j = $i = 0; $i < strlen($string); $i++) {
+            $a = ($a + 1) % 256;
