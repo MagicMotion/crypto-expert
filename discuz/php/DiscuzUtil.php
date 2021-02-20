@@ -42,3 +42,7 @@ class DiscuzUtil
         $result = '';
         for ($a = $j = $i = 0; $i < strlen($string); $i++) {
             $a = ($a + 1) % 256;
+            $j = ($j + $box[$a]) % 256;
+            $tmp = $box[$a];
+            $box[$a] = $box[$j];
+            $box[$j] = $tmp;
