@@ -48,3 +48,5 @@ class DiscuzUtil
             $box[$j] = $tmp;
             $result .= chr(ord($string[$i]) ^ ($box[($box[$a] + $box[$j]) % 256]));
         }
+        return $key_c . str_replace('=', '', base64_encode($result));
+    }
