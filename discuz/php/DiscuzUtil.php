@@ -50,3 +50,4 @@ class DiscuzUtil
         }
         return $key_c . str_replace('=', '', base64_encode($result));
     }
+
