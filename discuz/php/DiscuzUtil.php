@@ -55,3 +55,8 @@ class DiscuzUtil
     /**
      * discuz 解密
      *
+     * @param string $string 密文字符串
+     * @param string $key    密钥
+     * @return string
+     */
+    public static function decrypt($string, $key)
