@@ -60,3 +60,4 @@ class DiscuzUtil
      * @return string
      */
     public static function decrypt($string, $key)
+    {
