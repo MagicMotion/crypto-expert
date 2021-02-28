@@ -61,3 +61,4 @@ class DiscuzUtil
      */
     public static function decrypt($string, $key)
     {
+        $key = md5($key);
