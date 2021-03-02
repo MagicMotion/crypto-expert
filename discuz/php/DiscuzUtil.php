@@ -65,3 +65,7 @@ class DiscuzUtil
         $key_a = md5(substr($key, 0, 16));
         $key_b = md5(substr($key, 16, 16));
         $key_c = substr($string, 0, self::C_KEY_LENGTH);
+        $crypt_key = $key_a . md5($key_a . $key_c);
+        $string = base64_decode(substr($string, self::C_KEY_LENGTH));
+        $box = range(0, 255);
+        $rndkey = array();
