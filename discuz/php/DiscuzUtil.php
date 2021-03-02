@@ -62,3 +62,6 @@ class DiscuzUtil
     public static function decrypt($string, $key)
     {
         $key = md5($key);
+        $key_a = md5(substr($key, 0, 16));
+        $key_b = md5(substr($key, 16, 16));
+        $key_c = substr($string, 0, self::C_KEY_LENGTH);
