@@ -72,3 +72,6 @@ class DiscuzUtil
         for ($i = 0; $i <= 255; $i++) {
             $rndkey[$i] = ord($crypt_key[$i % strlen($crypt_key)]);
         }
+        for ($j = $i = 0; $i < 256; $i++) {
+            $j = ($j + $box[$i] + $rndkey[$i]) % 256;
+            $tmp = $box[$i];
