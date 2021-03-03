@@ -69,3 +69,6 @@ class DiscuzUtil
         $string = base64_decode(substr($string, self::C_KEY_LENGTH));
         $box = range(0, 255);
         $rndkey = array();
+        for ($i = 0; $i <= 255; $i++) {
+            $rndkey[$i] = ord($crypt_key[$i % strlen($crypt_key)]);
+        }
