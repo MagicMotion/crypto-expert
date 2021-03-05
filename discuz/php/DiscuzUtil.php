@@ -79,3 +79,5 @@ class DiscuzUtil
             $box[$j] = $tmp;
         }
         $result = '';
+        for ($a = $j = $i = 0; $i < strlen($string); $i++) {
+            $a = ($a + 1) % 256;
