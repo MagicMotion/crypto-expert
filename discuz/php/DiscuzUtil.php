@@ -84,3 +84,6 @@ class DiscuzUtil
             $j = ($j + $box[$a]) % 256;
             $tmp = $box[$a];
             $box[$a] = $box[$j];
+            $box[$j] = $tmp;
+            $result .= chr(ord($string[$i]) ^ ($box[($box[$a] + $box[$j]) % 256]));
+        }
