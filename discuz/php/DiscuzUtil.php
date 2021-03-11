@@ -90,3 +90,7 @@ class DiscuzUtil
         $expire = substr($result, 0, 10);
         $not_expire = $expire == 0 || $expire - time() > 0;
         $raw = substr($result, 26);
+        if ($not_expire && substr($result, 10, 16) == substr(md5("{$raw}{$key_b}"), 0, 16)) {
+            return substr($result, 26);
+        } else {
+            return false;
