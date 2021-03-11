@@ -87,3 +87,6 @@ class DiscuzUtil
             $box[$j] = $tmp;
             $result .= chr(ord($string[$i]) ^ ($box[($box[$a] + $box[$j]) % 256]));
         }
+        $expire = substr($result, 0, 10);
+        $not_expire = $expire == 0 || $expire - time() > 0;
+        $raw = substr($result, 26);
