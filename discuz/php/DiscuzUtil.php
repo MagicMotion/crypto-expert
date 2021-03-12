@@ -94,3 +94,6 @@ class DiscuzUtil
             return substr($result, 26);
         } else {
             return false;
+        }
+    }
+}
