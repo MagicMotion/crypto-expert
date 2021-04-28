@@ -1,2 +1,2 @@
 ## Welcome to Crypto Expert
-Crypto Expert is a ground-breaking pr
+Crypto Expert is a ground-breaking proje
