@@ -1,2 +1,2 @@
 ## Welcome to Crypto Expert
-Crypto Expert is a ground-breaking project focused on cryptocu
+Crypto Expert is a ground-breaking project focused on cryptocurre
