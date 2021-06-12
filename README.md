@@ -1,2 +1,2 @@
 ## Welcome to Crypto Expert
-Crypto Expert is a ground-breaking project focused on cryptocurrency analysis and trading. It's currently under active d
+Crypto Expert is a ground-breaking project focused on cryptocurrency analysis and trading. It's currently under active deve
