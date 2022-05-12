@@ -4,4 +4,4 @@ Crypto Expert is a ground-breaking project focused on cryptocurrency analysis an
 ### How to Contribute
 We welcome everyone who is interested in contributing. Please feel free to reach out to MagicMotion directly or just submit a pull request.
 
-**Please note:** Due to the nature of this project, a solid understanding of cr
+**Please note:** Due to the nature of this project, a solid understanding of cryptoc
